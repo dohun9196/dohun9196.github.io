@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Header {
+    position: fixed;
+    inset: 50px auto auto auto;
+    z-index: 999
+}
+
+.gnb {
+    position: fixed;
+    inset: 50% 50px auto auto;
+    transform: translate(0, -50%);
+    z-index: 999;
+}
+
+.Totop {
+    position: fixed;
+    inset: auto 50px 50px auto;
+    z-index: 999
+}
+
+.Mopen {
+    position: fixed;
+    inset: 50px 50px auto auto;
+    z-index: 999;
+
+    width: 30px;
+    height: 30px;
+    background: #f7f7f7;
+    cursor: pointer;
+}
+
+.Mopen button {
+    font-size: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.Mopen::before {
+    content: "";
+    position: absolute;
+    inset: 5px 5px auto 5px;
+    background: #333;
+    height: 2px;
+}
+
+.Mopen::after {
+    content: "";
+    position: absolute;
+    inset: auto 5px 5px 5px;
+    background: #333;
+    height: 2px;
+}
+
+.Mopen button::before,
+.Mopen button::after {
+    content: "";
+    position: absolute;
+    inset: 50% 5px auto 5px;
+    transform: translate(0, -50%);
+    background: #333;
+    height: 2px;
+
+}
+
+.Mopen.on::before,
+.Mopen.on::after {
+    opacity: 0;
+}
+
+.Mopen.on button::before {
+    transform: translate(0, -50%) rotate(45deg);
+}
+
+.Mopen.on button::after {
+    transform: translate(0, -50%) rotate(-45deg);
+
+}
+
+.Totop {
+    background: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.Totop a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
