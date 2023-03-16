@@ -1,0 +1,303 @@
+* {
+    -outline: 1px solid green;
+}
+
+.main_desc {
+    font-size: 30px;
+}
+
+.section.main {
+    position: relative;
+
+}
+
+.section.main::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/cover_bg.png)no-repeat center center/cover;
+
+    z-index: -1;
+}
+
+.section .inner .homepage {
+    position: relative;
+    margin: 0 0 50px 0;
+}
+
+.section .inner .homepage a {
+    display: block;
+}
+
+.section .inner .homepage img {
+    display: block;
+    width: 900px;
+    height: 550px;
+    margin: 0 auto;
+
+}
+
+.Header {
+    position: fixed;
+    inset: 50px auto auto 50px;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.Header.on {
+    color: #fff;
+}
+
+.Header h1 a {
+    display: block;
+}
+
+.gnb {
+    position: fixed;
+    inset: 50% 50px auto auto;
+    transform: translate(0, -50%);
+    z-index: 99;
+}
+
+.gnb li {
+    font-size: 0;
+    margin: 15px;
+}
+
+.gnb li a {
+    display: block;
+    text-align: center;
+
+    width: 10px;
+    height: 10px;
+
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.gnb li a:hover {
+    background: #5c5c5c;
+}
+
+.gnb li.on a {
+    background: #5c5c5c;
+}
+
+.section.on {
+    color: darkgreen;
+    transition: 0.5s;
+}
+
+
+.Cover {
+
+    position: fixed;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.Cover::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/main_bg.jpg) no-repeat center center/cover;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.Cover .left {
+    position: relative;
+    flex: 1;
+
+    height: 100%;
+
+    color: #fff;
+    background: #333;
+    padding: 300px 0;
+}
+
+.Cover .left address {
+    position: absolute;
+    inset: auto auto 50px auto;
+    padding: 0 50px;
+
+}
+
+.Cover .left address strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.Cover .left address span {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin: 0 0 10px 0;
+}
+
+.Cover .left address .link {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+.Cover .left address .link a {
+    display: block;
+}
+
+.Cover .left address .link i {
+    display: block;
+    font-size: 20px;
+}
+
+.Cover .right {
+    flex: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+.Cover .right ul>li {
+    margin: 50px 0;
+}
+
+.Cover .right ul>li a {
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.Cover .right ul>li a span {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 0 5px 0;
+    color: #777;
+}
+
+.Totop {
+    position: fixed;
+    inset: auto 50px 50px auto;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99
+}
+
+.Mopen {
+    position: fixed;
+    inset: 50px 50px auto auto;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+    z-index: 999;
+}
+
+.Mopen span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 35px;
+    height: 3px;
+
+    font-size: 0;
+    background: #333;
+    border-radius: 50px;
+
+    transition: 0.05s;
+}
+
+.Mopen .fir_open_bar {
+    top: 25%;
+    right: 0;
+
+    visibility: visible;
+    transition: 0.3s;
+}
+
+.Mopen .sec_open_bar {
+    top: 50%;
+    left: 50%;
+}
+
+.Mopen .thi_open_bar {
+    top: 75%;
+    right: 0;
+
+    visibility: visible;
+    transition: 0.3s;
+}
+
+.Mopen.on .fir_open_bar,
+.Mopen.on .thi_open_bar {
+    width: 0;
+    visibility: hidden;
+}
+
+.Mopen.on .sec_open_bar {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50px;
+    height: 50px;
+
+    background: #fff;
+    border-radius: 10px;
+    z-index: -1;
+
+
+}
+
+.Mopen .sec_open_bar::before,
+.Mopen .sec_open_bar::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 35px;
+    height: 1px;
+
+    background: transparent;
+    border-top: 3px solid #333;
+    border-radius: 50px;
+
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Mopen.on .sec_open_bar::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+.Mopen.on .sec_open_bar::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    opacity: 1;
+    visibility: visible;
+}
