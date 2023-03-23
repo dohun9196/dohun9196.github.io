@@ -33,27 +33,27 @@
 
 /* { portfolio 01 section */
 
-#fp01 {
+#project_atforet {
     background: url(../img/portfolio01_cover.png) no-repeat center center / cover;
 }
 
-#fp01 .fp_info_box dl .color .cor01 {
+#project_atforet .fp_info_box .project_details .color .cor01 {
     background-color: #b19273;
 }
 
-#fp01 .fp_info_box dl .color .cor02 {
+#project_atforet .fp_info_box .project_details .color .cor02 {
     background-color: #281e19;
 }
 
-#fp01 .fp_info_box dl .color .cor03 {
+#project_atforet .fp_info_box .project_details .color .cor03 {
     background-color: #333333;
 }
 
-#fp01 .fp_info_box dl .color .cor04 {
+#project_atforet .fp_info_box .project_details .color .cor04 {
     background-color: #555555;
 }
 
-#fp01 .fp_info_box dl .color .cor05 {
+#project_atforet .fp_info_box .project_details .color .cor05 {
     background-color: #777777;
 }
 
