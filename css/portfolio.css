@@ -2,41 +2,116 @@
     -outline: 1px solid green;
 }
 
-.main_desc {
+/* { main page */
+.section.main_page .inner .main_tit {
+    text-align: center;
+    color: #fff;
+}
+
+.section.main_page .inner .main_tit h2 {
+    font-size: 70px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+
+}
+
+.section.main_page .inner .main_tit p {
+    margin-top: 20px;
+    font-size: 22px;
+
+}
+
+.section.main_page .inner .main_desc {
     font-size: 30px;
 }
 
-.section.main {
-    position: relative;
+/* main page } */
 
+
+
+
+
+/* { portfolio 01 section */
+
+#fp01 {
+    background: url(../img/portfolio01_cover.png) no-repeat center center / cover;
 }
 
-.section.main::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(../img/cover_bg.png)no-repeat center center/cover;
-
-    z-index: -1;
+#fp01 .fp_info_box dl .color .cor01 {
+    background-color: #b19273;
 }
 
-.section .inner .homepage {
-    position: relative;
-    margin: 0 0 50px 0;
+#fp01 .fp_info_box dl .color .cor02 {
+    background-color: #281e19;
 }
 
-.section .inner .homepage a {
-    display: block;
+#fp01 .fp_info_box dl .color .cor03 {
+    background-color: #333333;
 }
 
-.section .inner .homepage img {
-    display: block;
-    width: 900px;
-    height: 550px;
-    margin: 0 auto;
-
+#fp01 .fp_info_box dl .color .cor04 {
+    background-color: #555555;
 }
+
+#fp01 .fp_info_box dl .color .cor05 {
+    background-color: #777777;
+}
+
+/* portfolio 01 section } */
+
+
+
+
+
+/* { portfolio 02 section */
+/* portfolio 02 section } */
+
+
+
+
+
+/* { portfolio 03 section */
+/* portfolio 03 section } */
+
+
+
+
+
+/* { portfolio 04 section */
+/* portfolio 04 section } */
+
+
+
+
+/* { portfolio 05 section */
+/* portfolio 05 section } */
+#fp02 {
+    background: url(../img/portfolio02_cover.png) no-repeat center center / cover;
+}
+
+#fp03 {
+    background: url(../img/portfolio02_cover.png) no-repeat center center / cover;
+}
+
+#fp04 {
+    background: url(../img/portfolio02_cover.png) no-repeat center center / cover;
+}
+
+#fp05 {
+    background: url(../img/portfolio02_cover.png) no-repeat center center / cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .Header {
     position: fixed;
@@ -72,22 +147,21 @@
     width: 10px;
     height: 10px;
 
-    background: #ccc;
+    background: transparent;
+    border: 1px solid #777;
     border-radius: 50%;
 }
 
 .gnb li a:hover {
     background: #5c5c5c;
+    border: none;
 }
 
 .gnb li.on a {
     background: #5c5c5c;
+    border: none;
 }
 
-.section.on {
-    color: darkgreen;
-    transition: 0.5s;
-}
 
 
 .Cover {
@@ -108,7 +182,7 @@
     inset: 0 0 0 0;
     width: 100%;
     height: 100%;
-    background: url(../img/main_bg.jpg) no-repeat center center/cover;
+    background: url(../img/cover_bg.jpg) no-repeat center center/cover;
     transform: scaleX(-1);
     z-index: -1;
 }
