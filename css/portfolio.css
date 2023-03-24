@@ -90,7 +90,7 @@
 }
 
 #fp03 {
-    background: url(../img/portfolio02_cover.png) no-repeat center center / cover;
+    background: url(../img/portfolio03_cover.png) no-repeat center center / cover;
 }
 
 #fp04 {
@@ -265,7 +265,8 @@
 
 .Totop {
     position: fixed;
-    inset: auto 50px 50px auto;
+    bottom: 50px;
+    right: 50px;
 
     width: 30px;
     height: 30px;
@@ -273,6 +274,12 @@
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.3);
     z-index: 99
+}
+
+.Totop a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
 }
 
 .Mopen {

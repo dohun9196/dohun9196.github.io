@@ -123,8 +123,28 @@
 
 
 
-
 /* info */
+
+.section .fp_info_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 40%;
+    height: 100%;
+    padding: 120px 50px 70px 50px;
+    background: #fff;
+    background-image: linear-gradient(180deg, white 12%, transparent 12%),
+        repeating-linear-gradient(180deg, #cacaca 0px, #cacaca 1px, transparent 1px, transparent 30px);
+
+    transform: translateX(-900px);
+}
+
+.section.on .fp_info_box {
+    transform: rotateX(0);
+    transition: 1.5s 1.5s;
+}
+
 .section .fp_info_box .project_wrap {
     width: 600px;
     height: auto;
