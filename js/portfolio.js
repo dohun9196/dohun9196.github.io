@@ -32,7 +32,15 @@ $(function () {
             $('.section')
                 .eq(0)
                 .addClass('on');
+        },
+        afterLoad: function (anchorLink, index) {
+            if (anchorLink === 'Main') {
+                $('.Header,.gnb, .Mopen').addClass('anch');
+            } else {
+                $('.Header,.gnb, .Mopen').removeClass('anch');
+            }
         }
+
     }
     $('.Main').fullpage(fullpageOption);
 
@@ -52,4 +60,8 @@ $(function () {
         event.stopPropagation();
         return false;
     });
+
+
+
+
 })
