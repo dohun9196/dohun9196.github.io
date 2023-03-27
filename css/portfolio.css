@@ -126,27 +126,51 @@
 
 /* { portfolio 01 section */
 
-#project_atforet {
+.fp_page01 {
     background: url(../img/portfolio01_cover.png) no-repeat center center / cover;
 }
 
-#project_atforet .fp_info_box .project_details .color .cor01 {
+.fp_page01 .fp_info_box .project_wrap .project_title .pj_num {
+    border-left: 1px solid #c4c4c4;
+    background: #b19273;
+}
+
+.fp_page01 .fp_img_box .link a {
+    color: #333;
+    background: #fff;
+
+}
+
+.fp_page01 .fp_img_box .link a:hover {
+    background: #b19273;
+    color: #fff;
+}
+
+.fp_page01 .fp_info_box .project_wrap .project_title .at_col {
+    color: #b19273;
+}
+
+.fp_page01 .fp_info_box .project_wrap .at_b {
+    background: linear-gradient(to top, #ffebdb 15%, transparent 15%);
+}
+
+.fp_page01 .fp_info_box .project_details .color .cor01 {
     background-color: #b19273;
 }
 
-#project_atforet .fp_info_box .project_details .color .cor02 {
+.fp_page01 .fp_info_box .project_details .color .cor02 {
     background-color: #281e19;
 }
 
-#project_atforet .fp_info_box .project_details .color .cor03 {
+.fp_page01 .fp_info_box .project_details .color .cor03 {
     background-color: #333333;
 }
 
-#project_atforet .fp_info_box .project_details .color .cor04 {
+.fp_page01 .fp_info_box .project_details .color .cor04 {
     background-color: #555555;
 }
 
-#project_atforet .fp_info_box .project_details .color .cor05 {
+.fp_page01 .fp_info_box .project_details .color .cor05 {
     background-color: #777777;
 }
 
@@ -157,6 +181,34 @@
 
 
 /* { portfolio 02 section */
+.fp_page02 {
+    background: url(../img/portfolio02_cover.png) no-repeat center center / cover;
+}
+
+.fp_page02 .fp_info_box .project_wrap .project_title .pj_num {
+    border-left: 1px solid #c4c4c4;
+    background: #00aeef;
+}
+
+.fp_page02 .fp_img_box .link a {
+    color: #333;
+    background: #fff;
+
+}
+
+.fp_page02 .fp_img_box .link a:hover {
+    background: #00aeef;
+    color: #fff;
+}
+
+.fp_page02 .fp_info_box .project_wrap .project_title .dw_col {
+    color: #00aeef;
+}
+
+.fp_page02 .fp_info_box .project_wrap .dw_b {
+    background: linear-gradient(to top, #c2e5fc 15%, transparent 15%);
+}
+
 /* portfolio 02 section } */
 
 
@@ -164,6 +216,15 @@
 
 
 /* { portfolio 03 section */
+#fp03 {
+    background: url(../img/portfolio03_cover.png) no-repeat center center / cover;
+}
+
+#fp03 .fp_info_box .project_wrap .project_title .pj_num {
+    border-left: 1px solid #c4c4c4;
+    background: #8cd98c;
+}
+
 /* portfolio 03 section } */
 
 
@@ -178,13 +239,8 @@
 
 /* { portfolio 05 section */
 /* portfolio 05 section } */
-#fp02 {
-    background: url(../img/portfolio02_cover.png) no-repeat center center / cover;
-}
 
-#fp03 {
-    background: url(../img/portfolio03_cover.png) no-repeat center center / cover;
-}
+
 
 #fp04 {
     background: url(../img/portfolio02_cover.png) no-repeat center center / cover;
@@ -205,7 +261,7 @@
 
 
 
-
+/* header */
 .Header {
     position: fixed;
     inset: 50px auto auto 50px;
@@ -222,6 +278,7 @@
     display: block;
 }
 
+/* gnb */
 .gnb {
     position: fixed;
     inset: 50% 50px auto auto;
@@ -242,37 +299,22 @@
     height: 10px;
 
     background: transparent;
-    border: 1px solid #777;
+    border: 1px solid #fff;
     border-radius: 50%;
 }
 
-.gnb li a:hover {
-    background: #000;
-    border: none;
+.gnbli a:hover {
+    background: #fff;
+
 }
 
 .gnb li.on a {
-    background: #000;
-    border: none;
-}
-
-.gnb.anch li a {
-    border: 1px solid #fff;
-
-}
-
-.gnb.anch li a:hover {
-    background: #fff;
-
-}
-
-.gnb.anch li.on a {
     background: #fff;
 
 }
 
 
-
+/* cover page */
 .Cover {
 
     position: fixed;
@@ -291,7 +333,7 @@
     inset: 0 0 0 0;
     width: 100%;
     height: 100%;
-    background: url(../img/cover_bg.jpg) no-repeat center center/cover;
+    background: url(../img/cover_bg01.jpg) no-repeat center center/cover;
     transform: scaleX(-1);
     z-index: -1;
 }
@@ -360,7 +402,7 @@
 
 .Cover .right ul>li a {
     display: block;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
 }
 
@@ -372,25 +414,46 @@
     color: #777;
 }
 
+/* totop button */
 .Totop {
     position: fixed;
     bottom: 50px;
     right: 50px;
 
-    width: 30px;
-    height: 30px;
-
+    width: 50px;
+    height: 50px;
+    background: #fff;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 99
+    box-shadow: 4px 4px 15px -9px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+
+    transition: 0.5s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.Totop.anch {
+
+    visibility: hidden;
+    opacity: 0;
 }
 
 .Totop a {
     display: block;
+    text-align: center;
     height: 30px;
-    line-height: 30px;
+
+
 }
 
+.Totop a>i {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+
+
+/* mopen bars */
 .Mopen {
     position: fixed;
     inset: 50px 50px auto auto;
@@ -412,15 +475,12 @@
     height: 3px;
 
     font-size: 0;
-    background: #000;
+    background: #fff;
     border-radius: 50px;
 
     transition: 0.05s;
 }
 
-.Mopen.anch span {
-    background: #fff;
-}
 
 .Mopen .fir_open_bar {
     top: 25%;

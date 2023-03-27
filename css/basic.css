@@ -18,14 +18,13 @@
     clear: both;
 }
 
-/* title color */
-.at_col {
-    color: #b19273;
+/* text_bold */
+.-bold {
+    font-weight: 500;
 }
 
-.dw_col {
-    color: #00aeef;
-}
+
+
 
 
 /* img */
@@ -35,7 +34,7 @@
     width: 50%;
     height: 100%;
     padding: 120px 50px 70px 50px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(29, 29, 32, 0.9);
 
     transform: translateX(1920px);
 }
@@ -87,7 +86,7 @@
 /* link */
 .section .fp_img_box .link {
     position: absolute;
-    top: calc(70% + 50px);
+    top: calc(70% + 60px);
     left: 50%;
     transform: translate(-50%, 0);
 
@@ -99,14 +98,16 @@
     text-align: center;
     width: 200px;
     height: 50px;
-    border: 1px solid #555;
+    border: 1px solid #fff;
+    color: #fff;
+    background: #555;
     line-height: 50px;
     transition: 0.4s;
 }
 
 .section .fp_img_box .link a:hover {
-    background: #555;
-    color: #fff;
+    background: #fff;
+    color: #333;
 }
 
 
@@ -135,19 +136,16 @@
 }
 
 .section .fp_info_box .project_wrap {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
 
     background: #fff;
     border: 1px solid #c4c4c4;
     box-shadow: 0 4px 4px -4px #333;
     border-radius: 10px;
 
-    margin: 0 auto;
-    padding: 50px;
-
     transform: translatex(-1200px);
-
 }
 
 .section.on .fp_info_box .project_wrap {
@@ -157,86 +155,85 @@
 }
 
 .section .fp_info_box .project_wrap .project_title {
-    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #c4c4c4;
 }
 
-.section .fp_info_box .project_wrap .project_title h2 {
-    font-size: 40px;
-    font-weight: 700;
-    margin: 0 0 5px 0;
+.section .fp_info_box .project_wrap .project_title .pj_tit {
+    flex: 1;
+    padding: 50px 50px;
 }
 
-.section .fp_info_box .project_wrap .project_title p {
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.section .fp_info_box .project_wrap .project_title span {
+.section .fp_info_box .project_wrap .project_title .pj_tit span {
     display: block;
     font-size: 12px;
     font-weight: 300;
     margin: 0 0 5px 0;
 }
 
-.section .fp_info_box .project_wrap .project_description {
-    margin: 0 0 30px 0;
+.section .fp_info_box .project_wrap .project_title .pj_tit h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
 }
 
-.section .fp_info_box .project_wrap .project_description p {
-
-    margin: 0 0 15px 0;
-}
-
-.section .fp_info_box .project_wrap .project_description strong {
-    display: block;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0 0 3px 0;
-
-}
-
-.section .fp_info_box .project_wrap .project_description span {
-    display: block;
-    font-size: 15px;
+.section .fp_info_box .project_wrap .project_title .pj_tit p {
+    font-size: 14px;
     font-weight: 300;
-    line-height: 1.3;
-    color: #555;
 }
 
-.section .fp_info_box .project_wrap .project_details li {
+.section .fp_info_box .project_wrap .project_title .pj_num {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    border-left: 1px solid #c4c4c4;
+    border-top-right-radius: 10px;
+    box-shadow: -3px 0 5px -3px #c4c4c4;
+    padding: 50px 50px;
+}
+
+
+.section .fp_info_box .project_wrap .project_description {
+    padding: 50px 50px;
+}
+
+.section .fp_info_box .project_wrap .project_description ul>li {
     margin: 0 0 20px 0;
 }
 
-.section .fp_info_box .project_wrap .project_details strong {
+.section .fp_info_box .project_wrap .project_description ul>li>strong {
     display: block;
-
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     margin: 0 0 3px 0;
+
 }
 
-.section .fp_info_box .project_wrap .project_details span {
+.section .fp_info_box .project_wrap .project_description ul>li>span {
     display: block;
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.3;
     word-spacing: 0.1em;
     letter-spacing: -0.02em;
-    color: #777;
-
+    color: #555;
 }
 
-.section .fp_info_box .project_wrap .project_details .color {
+
+.section .fp_info_box .project_wrap .project_description ul .pj_col {
     margin: 0;
 }
 
-.section .fp_info_box .project_wrap .project_details .color span {
+.section .fp_info_box .project_wrap .project_description ul .pj_col span {
     display: inline-block;
     font-size: 0;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-
 }
 
-.section .fp_info_box .project_wrap .project_details .color span~span {
+.section .fp_info_box .project_wrap .project_description ul .pj_col span~span {
     margin-left: 5px;
 }

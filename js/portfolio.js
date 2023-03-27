@@ -35,9 +35,9 @@ $(function () {
         },
         afterLoad: function (anchorLink, index) {
             if (anchorLink === 'Main') {
-                $('.Header,.gnb, .Mopen').addClass('anch');
+                $('.Header, .Totop').addClass('anch');
             } else {
-                $('.Header,.gnb, .Mopen').removeClass('anch');
+                $('.Header, .Totop').removeClass('anch');
             }
         }
 
