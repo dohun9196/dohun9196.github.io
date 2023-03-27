@@ -154,23 +154,23 @@
     background: linear-gradient(to top, #ffebdb 15%, transparent 15%);
 }
 
-.fp_page01 .fp_info_box .project_details .color .cor01 {
+.fp_page01 .fp_info_box .project_wrap .project_description ul .pj_col .col01 {
     background-color: #b19273;
 }
 
-.fp_page01 .fp_info_box .project_details .color .cor02 {
+.fp_page01 .fp_info_box .project_wrap .project_description ul .pj_col .col02 {
     background-color: #281e19;
 }
 
-.fp_page01 .fp_info_box .project_details .color .cor03 {
+.fp_page01 .fp_info_box .project_wrap .project_description ul .pj_col .col03 {
     background-color: #333333;
 }
 
-.fp_page01 .fp_info_box .project_details .color .cor04 {
+.fp_page01 .fp_info_box .project_wrap .project_description ul .pj_col .col04 {
     background-color: #555555;
 }
 
-.fp_page01 .fp_info_box .project_details .color .cor05 {
+.fp_page01 .fp_info_box .project_wrap .project_description ul .pj_col .col05 {
     background-color: #777777;
 }
 
@@ -207,6 +207,7 @@
 
 .fp_page02 .fp_info_box .project_wrap .dw_b {
     background: linear-gradient(to top, #c2e5fc 15%, transparent 15%);
+
 }
 
 /* portfolio 02 section } */
