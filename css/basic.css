@@ -41,7 +41,7 @@
 
 .section.on .fp_img_box {
     transform: rotateX(0);
-    transition: 1s 2.0s;
+    transition: 1s 1.5s;
 }
 
 .section .fp_img_box .pc_version {
@@ -133,7 +133,7 @@
 
 .section.on .fp_info_box {
     transform: translateX(0);
-    transition: 1s 1.5s;
+    transition: 1s 1s;
 }
 
 .section .fp_info_box .detail {
@@ -147,10 +147,10 @@
 }
 
 .section.on .fp_info_box .detail {
-    bottom: 40px;
+    bottom: 25px;
     opacity: 1;
     visibility: visible;
-    transition: 1.5s 3s;
+    transition: 1.5s 2s;
 }
 
 .section .fp_info_box .detail p {
@@ -180,7 +180,7 @@
 .section.on .fp_info_box .project_wrap {
     transform: translatex(0);
     opacity: 1;
-    transition: 1s 3s;
+    transition: 1s 2s;
 }
 
 .section .fp_info_box .project_wrap .project_title {
