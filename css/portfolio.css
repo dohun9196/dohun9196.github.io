@@ -304,7 +304,7 @@
     border-radius: 50%;
 }
 
-.gnbli a:hover {
+.gnb li a:hover {
     background: #fff;
 
 }
